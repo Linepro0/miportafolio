@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos para el body */
+body {
+    color: #FFFFFF; /* Cambia según el diseño */
+    background-color: #041527; /* Fondo principal */
+    line-height: 1.6;
+}
+
+/* Header / Navegación */
+header {
+
+    padding: 10px 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 133, 92, 0); /* Color inicial del header */
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+}
+header.scrolled {
+    background-color: rgba(250, 111, 65, 0.8); /* Color más opaco cuando se desplaza */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFC857;
+}
+
+/* Sección de Inicio */
+
+.inicio-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/image/inicio.png);
+    background-size: cover ;
+  }
+  
+  .contenido-inicio {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .texto {
+    width: 50%; /* Ajusta el ancho para que ocupe la mitad izquierda */
+    padding-left: 250px; /* Espacio a la izquierda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #fff; /* Asegúrate de que el texto sea visible sobre la imagen */
+  }
+  
+  .texto h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+  
+  .texto p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .imagen {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .imagen img {
+    max-width: 250px;
+    border-radius: 50%;
+  }
+
+/* Sección Sobre Mí */
+.sobre-mi-section {
+    background-color: #3B3B98;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre-mi-section img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Sección Proyectos */
+.proyectos-section {
+    padding: 50px 20px;
+    background-color: #041527;
+    text-align: center;
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proyecto {
+    width: 150px;
+    height: 150px;
+    background-color: #FF865C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Sección Habilidades */
+.habilidades-section {
+    background-color: #293462;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.habilidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.habilidad {
+    width: 50px;
+    height: 50px;
+    background-color: #FF865C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Sección Contacto */
+.contacto-section {
+    background-color: #FF865C;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #293462;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #041527;
+}
