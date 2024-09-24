@@ -7,76 +7,28 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="#inicio">NDD</a></li>
-            <li><a href="#sobre-mi">SOBRE MÍ</a></li>
-            <li><a href="#proyectos">PROYECTO</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <section id="inicio" class="inicio-section">
-        <div class="contenido-inicio">
-          <div class="texto">
-            <h1>Front-end <br>
-             Developer</h1>
-            <p>Hola, soy Nahuel Díaz, <br>
-             desarrollador front-end</p>
-          </div>
-          <div class="imagen">
-            <img src="/image/perfil.webp" alt="imagen" class="imagen-perfil">
-          </div>
-        </div>
-      </section>
 
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="sobre-mi-section">
-        <h2>Sobre Mí</h2>
-        <p>Soy un pibe re piola...</p>
-        <img src="ruta-a-tu-imagen.jpg" alt="Foto relacionada a Sobre Mí">
-    </section>
+  <nav>
+    <div class="nav-logo">
+      <a href="#">
+        <img src="/image/logofinal.png">
+      </a>
+    </div>
 
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="proyectos-section">
-        <h2>Mis Proyectos</h2>
-        <div class="proyectos-container">
-            <!-- Aquí irán los proyectos -->
-            <div class="proyecto">Proyecto 1</div>
-            <div class="proyecto">Proyecto 2</div>
-            <!-- Más proyectos según sea necesario -->
-        </div>
-    </section>
+    <ul class="nav-links">
+      <li class="link"><a href="#">Inicio</a></li>
+      <li class="link"><a href="#">Sobre mí</a></li>
+      <li class="link"><a href="#">Proyectos</a></li>
+      <li class="link"><a href="#">Habilidades</a></li>
+      <li class="link"><a href="#">Contacto</a></li>
+    </ul>
+    <button class="button">CV</button>
+  </nav>
 
-    <!-- Sección Habilidades -->
-    <section id="habilidades" class="habilidades-section">
-        <h2>Habilidades</h2>
-        <div class="habilidades-container">
-            <!-- Aquí irán los logos de las herramientas -->
-            <div class="habilidad">HTML</div>
-            <div class="habilidad">CSS</div>
-            <div class="habilidad">JavaScript</div>
-            <!-- Más habilidades según sea necesario -->
-        </div>
-    </section>
+  
 
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contacto-section">
-        <h2>¡Trabajemos juntos!</h2>
-        <form id="contacto-form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
 
-    <script src="js/main.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
