@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    border: none;
 }
 
 img{
@@ -64,5 +65,17 @@ nav{
 }
 
 .button{
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #1d4ed8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.button:hover{
+    background-color: #1e40af;
+    
 }
